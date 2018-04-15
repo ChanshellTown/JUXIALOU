@@ -1,0 +1,522 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<title>demo</title>
+
+    <link href="../JUXIALOU/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../JUXIALOU/css/amazeui.css" rel="stylesheet" type="text/css" />
+    <link href="../JUXIALOU/css/util.css" rel="stylesheet" type="text/css" />
+    <link href="../JUXIALOU/css/index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../JUXIALOU/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../JUXIALOU/css/swiper-4.2.0.min.css">
+
+    
+</head>
+
+<body>
+	<!--search-->
+	<form class="in_form clear" id="in_form">
+            <div class="clear in-bd">
+                <input type="text" class="form-control keyword" placeholder="图书检索">
+                <a onclick=""><img src="../JUXIALOU/img/search.svg"></a>
+            </div>
+            <div class="in_form_xx clear">
+                <label>
+                    <input type="radio" name="optionsRadios" value="1">搜索本站
+                </label>
+                <label>
+                    <input type="radio" name="optionsRadios" value="2" checked="checked">搜索全站
+                </label>
+            </div>
+        </form>
+        <!--//-->
+		<div class="wrap">
+		<header>
+			<div class="header-top">
+	<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+				<ul class="header-left">
+					<li><a href="">欢迎投稿</a></li>
+					<li><a href="">在校学生</a></li>
+					<li><a href="">教职员</a></li>
+					<li><a href="">家长|访客</a></li>
+					<li><a href="">交友</a></li>
+				</ul>
+				<ul class="header-right">
+						<li><a href="">登陆</a></li>
+						<li><a href="">注册</a></li>
+						<li><a href="">留言</a></li>
+						<li><a href="">网上服务大厅</a></li>
+						<li><a href="">|</a></li>
+						<li><a href="">图书馆</a></li>
+						<li><a href="">|</a></li>
+						<li id="en">
+								<a href="">English<span class="glyphicon glyphicon-chevron-down"></span></a>
+								<ul>
+								 <li>
+								     <a href="">旧版</a>
+								</li>
+									<li style="display: none;">
+									<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">中文简体</a>
+									</li>
+									<li style="display: block;">
+									<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁体中文</a>
+									</li>
+									</ul>
+							</li>
+							<li class="hea_sea" id="hea_sea"><img src="../JUXIALOU/img/Search.png" height="20" width="20"></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		</div>
+    
+		<div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="logo">
+                           <!-- <a href="/main.htm"><img src="/_upload/tpl/00/f5/245/template245/images/home/logo2.svg"/></a>-->
+                        <a href="">
+                     <span style="display:none;padding-top:13px;">
+                    <img xlink:href="" src="../JUXIALOU/img/logo1.png">
+                     </span>
+                     <img src="../JUXIALOU/img/logo1.png" style="height:90px;">
+                                    </a>
+                                
+                            
+                        
+                    </div>
+                </div>
+			</div>
+		</div>
+	</header>
+	
+
+     <div id="main-container">
+
+            <div class="headerr">
+ <div class="nav_site pc-nav">
+    <table class="nav-table">
+        <tbody><tr>
+                        <td class="first">
+                            <a href="" title="菊下楼">菊下楼</a>
+                            <ol style="display: none; /*height: 408px;*/ padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                    <li><a href="">菊下楼简介</a></li>
+                                    <li><a href="">历史沿革</a></li>
+                                    <li><a href="">维修中</a></li>
+                                    <li><a href="">维修中</a></li>
+                                    <li><a href="">统计数据</a></li>
+                            </ol>
+                        </td>
+                    <td class="">
+                        <a href="" title="图书">图书</a>
+                        <ol style="display: none; /*height: 459px;*/ padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                <li><a href="">期刊</a></li>
+                                <li><a href="">报纸</a></li>
+                                <li><a href="">论文</a></li>
+                                <li><a href="">古典</a></li>
+                                <li><a href="">音乐</a></li>
+                        </ol>
+                    </td>
+                    <td class="">
+                        <a href="" title="资源">资源</a>
+                        <ol style="display: none; height: 306px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                <li><a href="">科研概览</a></li>
+                                <li><a href="">研究机构</a></li>
+                                <li><a href="">学术期刊</a></li>
+                                <li><a href="">科研管理</a></li>
+                                <li><a href="">学术数据库</a></li>
+                                <li><a href="">出版社</a></li>
+                        </ol>
+                    </td>
+                    <td class="">
+                        <a href="" title="中外发现">中外发现</a>
+                        <ol style="display: none; /*height: 306px;*/ padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+								<li><a href="">外语典籍</a></li>
+								<li><a href="">维修</a></li>
+								<li><a href="">维修</a></li>
+                                
+                        </ol>
+                    </td>
+                    <td class="">
+                        <a href="" title="读者服务">读者服务</a>
+                        <ol style="display: none; /*height: 306px;*/ padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                <li><a href="">开馆时间</a></li>
+                                <li><a href="">办证须知</a></li>
+                                <li><a href="">入馆须知</a></li>
+                                <li><a href="">借阅须知</a></li>
+                                <li><a href="">常见问题</a></li>
+                        </ol>
+                    </td>
+                    <td class="">
+                        <a href="" title="校园生活">校园生活</a>
+                        <ol style="display: none; /*height: 459px;*/ padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                
+                                <li><a href="">文化</a></li>
+                                <li><a href="">校园交通</a></li>
+                                <li><a href="">全景</a></li>
+                                <li><a href="">办事大厅</a></li>
+                                <li><a href="">生活设施</a></li>
+                                <li><a href="">文明创建</a></li>
+                        </ol>
+                    </td>
+                    <td class="">
+                        <a href="" title="关于我们">关于我们</a>
+                        <ol style="display: none; height: 408px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                <li><a href="">信息公开</a></li>
+                                <li><a href="">党务公开</a></li>
+                                <li><a href="">校刊年报</a></li>
+                                <li><a href="">常用电话</a></li>
+                                <li><a href="">教学日历</a></li>
+                                <li><a href="">人才招聘</a></li>
+                                <li><a href="">社会捐赠</a></li>
+                                <li><a href="">联系我们</a></li>
+                        </ol>
+                    </td>
+
+        </tr>
+    </tbody></table>
+</div>
+
+       
+
+    </div>
+<div class="fixednav" style="display: none; opacity: 0; top: -60px;"> 
+    <table class="nav-table">
+        <tbody><tr>
+            <td class="fixedlogo">
+                <a href=""><img src="../JUXIALOU/img/logo2.png" alt=""></a>
+            </td>
+                            <td class="first">
+                                <a href="" title="菊下楼">菊下楼</a>
+                            </td>
+                        <td class="">
+                            <a href="" title="图书">图书</a>
+                        </td>
+                        <td class="">
+                            <a href="" title="资源">资源</a>
+                        </td>
+                        <td>
+                            <a href="" title="中外发现">中外发现</a>
+                        </td>
+                        <td>
+                            <a href="" title="读者服务">读者服务</a>
+                        </td>
+                        <td>
+                            <a href="" title="校园生活">校园生活</a>
+                        </td>
+                        <td>
+                            <a href="" title="关于我们">关于我们</a>
+                        </td>
+
+
+        </tr>
+    </tbody></table>
+
+</div> 
+
+</div>
+
+    
+</div>
+			
+	
+	 <div class="swiper-container swiper-container-fade swiper-container-horizontal">
+	  <div class="swiper-wrapper">
+		<div class="swiper-slide swiper-slide-active" style="background-image: url(../JUXIALOU/img/b1.jpg);"></div>
+		<div class="swiper-slide swiper-slide-next" style="background-image: url(../JUXIALOU/img/b2.jpg);"></div>
+		<div class="swiper-slide" style="background-image: url(../JUXIALOU/img/b2.jpg);"></div>
+			</div>
+	<!-- Add Pagination -->
+		<div class="swiper-pagination swiper-pagination-white swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
+	<!-- Add Arrows -->
+		<div class="swiper-button-next swiper-button-white" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+		<div class="swiper-button-prev swiper-button-white swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+		<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+
+
+		
+		<!-- con -->
+		<div class="wrap-content">
+				<div class="firstBlock">
+					<div class="container">
+						<div class="row">
+								<div class="col-lg-8 col-md-8 pdl27 pdr27"> 
+										<div class="title newsBlockTitle">
+											<!-- 菊下新闻标题 -->
+											<ul>
+												<li>
+											  <!-- scholl news -->
+																  
+												<a href="" target="_blank">菊下新闻</a> 
+												<a href="" target="_blank">动态专题网»</a> 
+																
+											   </li>
+											</ul>
+											<!-- 视频|时讯|进入新闻网 -->
+											<ul class="newTwoBlock">
+												<li>
+													<a href="" target="_blank">热点</a>
+												</li>  
+												<li>|</li>  
+												<li>
+													<a href="" target="_blank">时讯</a>
+												</li>    
+												<li>|</li>  
+												<li>
+													<a href="" target="_blank">进入新闻网 »</a>
+												</li> 
+											</ul>
+				
+										</div>
+										
+											
+													
+	<!-- 菊下新闻左模块 -->                                
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 blcokLeft">
+		<div class="content">
+			<a href="" target="_blank" title="【历史文献数据库试用】《中国地方历史文献数据库》是目前国内唯一的地方历史文献数据库">
+            <div class="blcokLeft-img"><img src="../JUXIALOU//img/4.jpg" width="340px" height="180px" ></div>
+			<h3>【历史文献数据库试用】《中国地方历史文献数据库》是目前国内唯一的地方历史文献数据库 也是规模最大的写本文献可全文检索数据库</h3>
+			<p>该库收录了主要来自浙江南部的处州、安徽南部的徽州、江西的鄱阳湖区、福建，以及湖南、广东、云南、辽宁、山西、湖北、河北等地的地方
+				历史文献，总量约35万件，150万页。一期入库3.5万件，近10万页。该库适合于历史学、人类学、社会学、民俗学、宗教学、经济学、政治学、
+				法学等多门学科研究者使用，也适合对地方文献感兴趣的个人。
+				[详细]										</p>
+			</a>
+			</div>
+			</div>
+												
+											
+													
+										
+											
+															   
+<!-- 菊下新闻右模块 -->   
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 blcokRight">
+			<div class="content">
+			<ul><li><a href="" title="标题：2017国际学术图书巡回展
+				点击数：66
+				发表时间：18年03月30日" target="_blank"><h3>2017国际学术图书巡回展
+				</h3></a></li>
+				<li><a href=""><h3>【通知】世界读书日活动-馆际互借
+				</h3></a></li>
+				<li><a href=""><h3>【通知】世界读书日活动-露天电影
+				</h3></a></li>
+				<li><a href=""><h3>【通知】菊下楼图书馆暑期社会实践招募
+                   </h3></a></li>
+					<li><a href=""><h3>【通知】智慧图书馆二期 —— 智能机器人
+						</h3></a></li>
+						<li><a href=""><h3>【通知】读书节活动-茶韵润书香
+							</h3></a></li>
+				<li><a href="" ><h3>向经典致敬——2017年4.23世界读书... 
+				</h3></a></li>
+				<li><a href=""><h3>人间四月天 读书正当时
+				</h3></a></li>
+				<li><a href=""><h3>达康书记喊你来注册——人间四月芳菲尽 CASHL书香有礼来</h3></a>
+				</li>
+				<li><a href=""><h3>指尖上的记忆——非遗进校园首次活动”在南京大学图书馆举办</h3></a>
+				</li>
+			        </ul>
+					 </div>
+						</div>
+												
+				</div>
+         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bigBlockReport pdr27 pdl27">
+										<div class="title">
+											<ul>
+												<li><a href="">菊下公告</a></li>
+												<li>|</li>
+												<li><a href="">校内通知</a></li>
+												<li>|</li>
+												<li><a href="">每周会议</a></li><!--<li><a href="" class="more">更多...</a></li>-->
+											</ul>
+										</div>
+										<div class="lectureBlock">
+											<ul>
+											<li><a href="" title="我校正式购买Emerald全文期刊库">
+											<div class="media">
+											   <div class="media-left">
+													  <h3>13</h3>
+													  <p>2018.04</p>
+												</div>
+												<div class="media-body">
+													<h3>
+														我校正式购买Emerald全文期刊库...
+													</h3>
+													<p>Emerald管理学全文期刊库收录2000年至今的268种专家评审的管理学术期刊，提供最新的管理学研究和学术思想...</p>
+												</div>
+											</div></a>
+											</li>     
+					<li class="nowrapList">
+							  <a href="" title="EBSCO一带一路资源中心数据库开通试用"><span>01-31</span>EBSCO一带一路资源中心数据库开通试用 </a>
+					</li>                                            
+					<li class="nowrapList">
+							  <a href="" title="CADAL资源网站暂停服务通知"><span>10-11</span>CADAL资源网站暂停服务通知 </a>
+					 </li>                                        
+													
+										   </ul>
+										</div>
+										<div class="title">
+											<ul>
+												<li><a href="">学术讲座</a></li>
+											</ul>
+										</div>
+										<div class="lectureBlock">
+											<ul>
+											<li><a href="" title="经济与社会研究院2018年海外硕士留学项目招生简章">
+											<div class="media">
+											   <div class="media-left">
+													  <h3>13</h3>
+													  <p>2018.04</p>
+												</div>
+												<div class="media-body">
+													<h3>
+														经济与社会研究院2018年...
+													</h3>
+													<p>经济与社会研究院海外硕士留学项目招生简章经济与社会研究院发展...</p>
+												</div>
+											</div></a>
+											</li>     
+					<li class="nowrapList">
+							  <a href="" title="《EBSCO一带一路资源中心数据库开通试用》"><span>01-31</span>《EBSCO一带一路资源中心数据库开通试用》 </a>
+					</li>                                            
+					<li class="nowrapList">
+							  <a href="" title="CADAL资源网站暂停服务通知"><span>10-11</span>CADAL资源网站暂停服务通知 </a>
+					 </li>                                        
+													
+										   </ul>
+										</div>
+									</div>
+
+		
+							</div>
+							</div>
+							</div>
+							</div>
+
+							<footer class="footer">
+								<div class="footWrap">
+									<div class="container">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 footLeft">
+											<ul>
+												<li><a href=""> 电子资源 </a></li>
+												<li><a href=""> 参考咨询 </a></li>
+												<li><a href=""> 科技查新 </a></li>
+												<li><a href=""> 百度学术 </a></li></ul>
+												<ul>
+												<li><a href=""> 自助借还 </a></li>
+												<li><a href=""> 自助打印 </a></li>
+												<li><a href=""> 馆际互借 </a></li>
+												<li><a href=""> 非书资源系统 </a></li></ul></div>
+											<div class="col-lg-6 col-md-6 footCenter">
+												<div class="col-lg-5 col-md-5 ewm">
+													<a href=""><img src="../JUXIALOU/img/wechat.jpg" width="90px" height="90px">
+													<p>
+														官方微信公众号
+													</p></a>
+												</div>
+												<div class="col-lg-7 col-md-7 address">
+													<p>
+														地址：B612星球
+													</p>
+													<p>
+														邮编：B612-612
+													</p>
+													<p>
+														版权所有©菊下楼
+													</p>
+													<p>
+						
+														<a href="" target="_blank">ICP备案号：粤ICP备 B612号</a>
+													</p>
+													<p>
+														<a href="" target="_blank"><img src="">粤公网安备 B612号</a>
+													</p>
+												</div>
+											
+
+											</div>
+				<div class="col-lg-3 col-md-3 footRight">
+                        
+                 <a href="" class="btlogo"><img src="../JUXIALOU/img/logo2.png" class="img-responsive"></a>
+					 <ul class="identify">
+						 <li><a href="" target="_blank">
+							<img src="../JUXIALOU/img/foot1.png"></a></li><li>
+							<a href="" target="_blank">
+							<img src="../JUXIALOU/img/foot2.png"></a></li><li>                    
+							<span id="_ideConac">                        
+							<a href="" target="_blank">                            
+							<img id="imgConac" vspace="0" hspace="0" border="0" src="../JUXIALOU/img/foot3.png" data-bd-imgshare-binded="1">
+							  </a>  </span>               
+							 </li></ul>
+				</div>
+														  
+										</div>
+									</div>
+								</div>
+							</footer>
+
+		</div>
+
+	<script src="../JUXIALOU/js/jquery-3.3.1.min.js"></script>
+	<script src="../JUXIALOU/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="../JUXIALOU/js/swiper-4.2.0.min.js"></script>
+	<script type="text/javascript" src="../JUXIALOU/js/common.js"></script>
+    <script type="text/javascript" src="../JUXIALOU/js/util.js"></script>
+    <script type="text/javascript" src="../JUXIALOU/js/amazeui.min.js"></script>
+	
+
+
+	<script>        
+	  var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      effect: 'fade',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+	});</script>
+
+<script type="text/javascript">  
+/*$(function () {  
+var ie6 = document.all;  
+var dv = $('#menu'), st;  
+dv.attr('otop', dv.offset().top); //存储原来的距离顶部的距离  
+$(window).scroll(function () {  
+st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);  
+if (st > parseInt(dv.attr('otop'))) {  
+if (ie6) {//IE6不支持fixed属性，所以只能靠设置position为absolute和top实现此效果  
+dv.css({ position: 'absolute', top: st });  
+}  
+else if (dv.css('position') != 'fixed') dv.css({ 'position': 'fixed', top: 0 });  
+} else if (dv.css('position') != 'static') dv.css({ 'position': 'static' });  
+});  
+});   */
+</script>  
+<script type="text/javascript">  
+// 鼠标hover事件
+/*
+$(document).ready(function(){      
+$('#nav').hover(function() {    
+        $(this).addClass('#nav-hover');    
+        $(".menuBlock").show('fast');    
+    }, function() {    
+        $(this).removeClass('#nav-hover');    
+    });
+     
+});*/
+</script> 
+</body>
+</html>
